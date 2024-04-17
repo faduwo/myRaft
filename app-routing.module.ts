@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
   {
     path: '',
@@ -13,46 +13,57 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+    loadChildren: () => import('./pages/login/login.module').then(m => m.LoginPageModule)
   },
   {
     path: 'signup',
-    loadChildren: () => import('./pages/signup/signup.module').then( m => m.SignupPageModule)
+    loadChildren: () => import('./pages/signup/signup.module').then(m => m.SignupPageModule)
   },
   {
     path: 'landing',
-    loadChildren: () => import('./pages/landing/landing.module').then( m => m.LandingPageModule)
+    loadChildren: () => import('./pages/landing/landing.module').then(m => m.LandingPageModule)
   },
   {
     path: 'reset-password',
-    loadChildren: () => import('./pages/reset-password/reset-password.module').then( m => m.ResetPasswordPageModule)
+    loadChildren: () => import('./pages/reset-password/reset-password.module').then(m => m.ResetPasswordPageModule)
   },
   {
     path: 'guest-login',
-    loadChildren: () => import('./pages/guest-login/guest-login.module').then( m => m.GuestLoginPageModule)
+    loadChildren: () => import('./pages/guest-login/guest-login.module').then(m => m.GuestLoginPageModule)
   },
   {
     path: 'chats-page',
-    loadChildren: () => import('./pages/chats-page/chats-page.module').then( m => m.ChatsPagePageModule)
+    loadChildren: () => import('./pages/chats-page/chats-page.module').then(m => m.ChatsPagePageModule)
   },
   {
     path: 'events-page',
-    loadChildren: () => import('./pages/events-page/events-page.module').then( m => m.EventsPagePageModule)
+    loadChildren: () => import('./pages/events-page/events-page.module').then(m => m.EventsPagePageModule)
   },
   {
     path: 'groups-page',
-    loadChildren: () => import('./pages/groups-page/groups-page.module').then( m => m.GroupsPagePageModule)
+    loadChildren: () => import('./pages/groups-page/groups-page.module').then(m => m.GroupsPagePageModule)
   },
   {
     path: 'resources-page',
-    loadChildren: () => import('./pages/resources-page/resources-page.module').then( m => m.ResourcesPagePageModule)
+    loadChildren: () => import('./pages/resources-page/resources-page.module').then(m => m.ResourcesPagePageModule)
   },
-  // group details page - overview
+  // group - overview
   {
     path: 'group-overview',
-    loadChildren: () => import('./pages/group-overview/group-overview.module').then( m => m.GroupOverviewPageModule)
+    loadChildren: () => import('./pages/group-overview/group-overview.module').then(m => m.GroupOverviewPageModule)
+  },
+  // group - events
+  {
+    path: 'group-events',
+    loadChildren: () => import('./pages/group-events/group-events.module').then(m => m.GroupEventsPageModule)
+  },
+  // event - overview
+  {
+    path: 'event-details',
+    loadChildren: () => import('./pages/event-details/event-details.module').then(m => m.EventDetailsPageModule)
   },
   //
+
 ];
 
 @NgModule({

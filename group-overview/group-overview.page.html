@@ -4,6 +4,7 @@
   </ion-toolbar>
 </ion-header> -->
 
+
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
@@ -11,19 +12,45 @@
     </ion-toolbar>
   </ion-header>
 
+<!-- MyRaft and Student Icon Top of page -->
+<ion-card style="background-color: #003057; ">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="8">
+        <!-- MyRaft Logo -->
+        <img src="..\assets\myRaft_logo.png" style="width:85%; height: 85%;">
+      </ion-col>
+      <ion-col size="4" style="text-align: right;">
+        <!-- Avatar Icon -->
+        <ion-avatar>
+          <img alt="Student Avatar" src="https://ionicframework.com/docs/img/demos/avatar.svg" style="width: 85%; height: 85%;">
+        </ion-avatar>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
 
-<ion-img
+<!-- End of MyRaft and Student Icon -->
+
+  
+  <ion-card>
+    <ion-img
   src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcsumb.edu%2Fmedia%2Fcsumb%2Fsection-editors%2Flibrary%2Flibrary-diversity-equity-amp-inclusion%2FCLSS-Banner-3549x2304.png&f=1&nofb=1&ipt=67e600107bb63c320624b40ca0b12922439026d4bd83221dd8e2974c9b498d50&ipo=images"
   alt="El Centro Logo"
 ></ion-img>
+    <ion-card-header>
+      <ion-card-title>El Centro - Service Organization</ion-card-title>
+    </ion-card-header>
 
-<ion-toolbar>
-  <button routerLink="/group-overview" class="appheader" id="currentButton">Overview</button>
-  <button routerLink="/group-overview" class="appheader">Events</button>
-</ion-toolbar>
+    <ion-toolbar>
+      <button routerLink="/group-overview" class="appheader" id="currentButton">Overview</button>
+      <button routerLink="/group-events" class="appheader">Events</button>
+    </ion-toolbar>
+  </ion-card>
+
 
 <!-- Group Info -->
-<ion-content [fullscreen]="true" class="ion-padding">
+<ion-content [fullscreen]="true" class="ion-padding group-info">
 <h2>Mission:</h2>
 <p>CSUMB's Centro will serve as a central hub and resource for Chicanx/Latinx student success, by providing academic, social, and personal support in a welcoming space to be the affirming and diverse home students deserve while pursuing their educational and personal goals.</p>
 
@@ -39,7 +66,11 @@
 100 Campus Center, Seaside, CA 93955, United States</p>
 
 <h2>Social Links:</h2>
-<!-- Add social links -->
+  <div class="social-links">
+    <a href="https://www.instagram.com/elcentro_csumb/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" alt="Instagram"></a>
+    <a href="YOUR_TWITTER_LINK_HERE" target="_blank"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngkey.com%2Fpng%2Ffull%2F2-27646_twitter-logo-png-transparent-background-logo-twitter-png.png&f=1&nofb=1&ipt=c872bec55e8bd0caa23fb5e66d0e566d8f4560e0932c22f5042dea825156ab52&ipo=images" alt="Twitter"></a>
+    <a href="YOUR_FACEBOOK_LINK_HERE" target="_blank"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Fff%2FFacebook_logo_36x36.svg%2F1200px-Facebook_logo_36x36.svg.png&f=1&nofb=1&ipt=f3005930b29053523be9f325e080cda1aecd922d31cac933def9145f1b6fc671&ipo=images" alt="Facebook"></a>
+  </div>
 
 </ion-content>
 <!-- End of Group Info -->
@@ -78,3 +109,4 @@
 <!-- End of Navigation Bar -->
   </ion-toolbar>
 </ion-footer>
+
